@@ -1,0 +1,64 @@
+
+2.
+
+a)
+
+class Sayilar():
+    def __init__(self, sayiListesi):
+        self.sayiListesi = sayiListesi
+    def tek(self):
+        self.tek = []
+        for i in self.sayiListesi:
+            if i % 2 == 1:
+                self.tek.append(i)
+        return self.tek
+    def cift(self):
+        pass
+print(Sayilar([1,2,3,4,5]).tek())
+
+b)
+class Sayilar():
+    def __init__(self, sayiListesi):
+        self.sayiListesi = sayiListesi
+    def besinkati(self):
+        self.besinkati = []
+        for i in self.sayiListesi:
+            if i % 5 == 0:
+                self.besinkati.append(i)
+        return self.besinkati
+    def besinkatidegil(self):
+        pass
+print(Sayilar([1,2,3,4,5]).besinkati())
+
+
+3.
+a)
+
+import numpy as np
+
+isin=np.ones((3,3))
+
+print(isin)
+
+
+b)
+import numpy as np
+
+isin=np.ones((3,3))
+  
+isin1=np.array(isin)
+
+isin1[(1,1)]=0
+
+isin1
+
+c)
+
+import numpy as np
+
+isin=np.ones((3,3))
+
+isin=np.append([[1,1,1,1,1], [1,1,1,1,1]],[[1,1,1,1,1],[1,1,1,1,1]],axis=0)
+print(isin)
+
+
